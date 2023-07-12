@@ -1,5 +1,5 @@
 # CustomCSSPluginFile-MSpringTheme
-针对本人目前在用的MSpring主题，使用自定义CSS样式插件进行修改的css样式文件（仅指本人观感方面）
+针对本人目前在用的[MSpring主题](https://github.com/MUKAPP/LiteLoaderQQNT-MSpring-Theme)，使用[自定义CSS样式](https://github.com/xh321/LiteLoaderQQNT-Custom-CSS)进行修改的css样式文件（仅指本人观感方面）
 
 # 介绍
 本项目存放本人在使用QQNT主题时出现的问题进行的排版修复用css样式文件。
