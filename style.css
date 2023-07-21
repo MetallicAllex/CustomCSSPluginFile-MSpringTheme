@@ -66,7 +66,8 @@
 .message-content__wrapper>.msg-content-container.container--others.ark-msg-content-container,
 .msg-content-container.container--others.reply-message__container,
 .msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
-.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy {
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy,
+div.operation {
     background: transparent !important;
 }
 
