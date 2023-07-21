@@ -1,0 +1,349 @@
+/* 自己的聊天框 */
+.message-container--self .text-normal {
+    padding: 5px 12px 5px 12px;
+    font-size: 18px;
+    color: black;
+}
+
+/* 好友通知界面 */
+/* .list-item:not(.across-mode.recent-contact-item, .list-item__content) {
+    background-color: rgba(255, 255, 255, .75) !important;
+} */
+
+.q-select-button.card-action-btn {
+    background-color: rgba(0, 0, 0, .32);
+}
+
+.list-item.across-mode.contact-buddy-item.contact-item>.list-item__container {
+    background: transparent !important;
+}
+
+/* 全局背景透明 */
+.list-item.contact-buddy-item.contact-item>.list-item__container,
+/* 意义不明，先拎出来
+.viewport-list__inner>.list-item>div.list-item__container, */
+.list-item.across-mode.contact-device-item.contact-item,
+.list-item__container>.recent-contact-item--top,
+/* .empty-panel>.q-empty-page.empty-panel.empty-panel--noTitle, */
+.contact-buddy-item.contact-item,
+.message-container--self>.message-content.mix-message__inner,
+.draggable-view__container.panel-header.chat-header.need-token-updated,
+/* .chat-msg-area__tip--top>div>.av-call-status.horseman, */
+/* 文件样式 */
+.message-container.file-message,
+.file-message--content,
+.normal-file.file-element,
+/* 聊天消息样式 */
+.message-content__wrapper>.msg-content-container.container--others.ark-msg-content-container,
+.msg-content-container.container--others.reply-message__container,
+.msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy,
+.q-scroll-view.scroll-view--show-scrollbar.msg-input,
+.chat-func-bar.shortcuts,
+div.operation,
+.aio>.panel-header.chat-header.need-token-updated {
+    background: transparent !important;
+}
+
+.q-button.q-button--secondary.q-button--default.close {
+    display: none;
+}
+
+.empty-profile {
+    background-color: #91dfff !;
+    backdrop-filter: blur(15px) !important;
+}
+
+.empty-panel.empty-aio>.ad-wrapper,
+.group-assistent-list {
+    background: rgba(0, 0, 0, .72) !important;
+    backdrop-filter: blur(5px);
+}
+
+.forward-msg {
+    width: 400px !important;
+    /* height: 175px !important; */
+}
+
+.message {
+    padding-bottom: 0 !important;
+}
+
+div.container>aside.sidebar {
+    background: rgba(0, 0, 0, .71973) !important;
+    backdrop-filter: blur(5px);
+}
+
+.draggable-view__container.sidebar {
+    background: rgba(0, 0, 0, .32) !important;
+    backdrop-filter: blur(1px);
+}
+
+/* 收藏页面 */
+.favorites-item-mainList>* {
+    border-bottom: 3px white !important;
+}
+
+.favorites-layout__side,
+.favorites-layout__right-area>.favorites-layout__content {
+    background: rgba(0, 0, 0, .5) !important;
+}
+
+.favorites-item.favorites-audio>.audio-bubble.favorites-item__content.favorites-audio__content {
+    width: 250px;
+    height: 20px;
+}
+
+/* 群聊右框增宽 */
+.group-box,
+.group-box>.group-notice {
+    width: 260px !important;
+}
+
+/* 发送按钮增宽 */
+.send-btn-wrap>.send.send--disabled,
+.send-btn-wrap>.send {
+    height: 30px !important;
+    width: 120px !important;
+}
+
+.chat-input-area.no-copy {
+    background: rgba(0, 0, 0, .15) !important;
+}
+
+div.q-context-menu {
+    background: rgba(0, 0, 0, .4) !important;
+    backdrop-filter: blur(3px);
+}
+
+div.q-context-menu>.q-context-menu-item.q-context-menu-item--normal:hover {
+    background: rgba(0, 0, 0, .3) !important;
+    /* backdrop-filter: blur(1px); */
+    animation: HighlightAnimation 3s infinite ease-in-out;
+}
+
+@keyframes HighlightAnimation {
+    from {
+        background: rgba(0, 0, 0, .25);
+
+    }
+
+    50% {
+        background: rgb(255, 255, 255);
+        box-shadow: #91dfff 1px 1px 25px;
+    }
+
+    to {
+        background: rgba(0, 0, 0, .25);
+    }
+}
+
+/* 群聊人数 */
+.panel-header__title>.chat-header__title>span:not(.text-ellipsis) {
+    font-size: 13px !important;
+    transform: translateY(2px);
+}
+
+/* 聊天文字样式 */
+.mix-message__inner>.text-element>.text-normal:not(.image.pic-element>.pic-content, .text-element--at),
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner {
+    padding: 5px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px !important;
+}
+
+/* 文件样式 Begin */
+.message-container.file-message,
+.file-message--content,
+.normal-file.file-element {
+    width: 100% !important;
+    /* height: 60% !important; */
+}
+
+.normal-file.file-element>.file-info {
+    transform: translateY(30%) !important;
+}
+/* 文件样式 End */
+
+/* 好友面板 */
+.profile__body {
+    /* background-color: rgba(0, 0, 0, .4); */
+    transform: translateY(27%);
+    bottom: 10px;
+}
+
+/* 左侧面板 */
+.contact-layout__content-area {
+    backdrop-filter: blur(15px) brightness(0.3);
+}
+
+.contact-layout__right-area {
+    backdrop-filter: brightness(0.5) !important;
+}
+
+/* 群聊成员名字改色使其容易可见 */
+.viewport-list__inner>.group-user>.group-user__content>.group-user__name.text-ellipsis {
+    color: rgba(255, 255, 255, .65) !important;
+}
+
+/* 成员列表收缩 */
+.group-user {
+    padding: 0 !important;
+}
+
+/* 头像圆角 */
+*>.avatar, /* 偏向于全局的解决方案 */
+.avatar.group-user__avatar,
+/* 电话，共享环境 */
+div.recent-contact-item__phone>div.recent-contact-item__phone_bg {
+    border-radius: 5px !important;
+}
+
+/* 给电话提示和新消息（顶部和底部）添加闪烁效果 */
+.chat-msg-area__tip--top {
+    animation: HighlightAnimation 5s infinite ease-in-out;
+}
+
+.q-notification.theme-default.chat-msg-area__tip--top-btn,
+.q-notification.theme-default.chat-msg-area__tip--bottom {
+    animation: HighlightAnimation 5s infinite ease-in-out;
+    width: 150px;
+}
+
+@keyframes HighlightAnimation {
+    from {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: #91dfff 1px 5px 25px;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+/* 预览消息
+.list-item__summary>.summary-main.text-ellipsis>span {
+    color: white !important;
+}
+
+.card-summary.text-ellipsis:not(.card-summary__name),
+.summary-main.text-ellipsis>span {
+    color: black !important;
+}
+*/
+
+/* 目前未生效的样式
+.ck.ck-editor__main {
+    height: 240px !important;
+}
+
+.q-menu.q-menu__mixed-type.undefined {
+    background: none;
+    border: 0 transparent;
+}
+
+.message-container--self>.message-content.mix-message__inner {
+    background: transparent !important;
+     padding: 5px 12px 5px 12px !important; 
+}
+
+.draggable-view__container.panel-header.chat-header.need-token-updated {
+    background: transparent !important;
+}
+
+.list-item.across-mode.recent-contact-item.recent-contact-item--top,
+.list-item__summary>.summary-main.text-ellipsis>.text-ellipsis {
+    color: #91dfff !important;
+}
+
+.chat-msg-area__tip--top>div>.av-call-status.horseman {
+    background: transparent !important;
+    // backdrop-filter: blur(10px) brightness(0.8); 
+    border-bottom: 0;
+}
+
+.av-call-info>.name-text,
+.av-call-info>.content-text {
+    align-items: center !important;
+}
+
+/ 聊天消息样式
+.message-content__wrapper>.msg-content-container.container--others.ark-msg-content-container,
+.msg-content-container.container--others.reply-message__container,
+.msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy {
+    background: transparent !important;
+    // padding: 5px 12px 5px 12px; 
+}
+
+.message-content.mix-message__inner>.text-element {
+    padding: 0 !important;
+}
+
+.chat-input-area.no-copy {
+    background-color: transparent !important;
+}
+
+.chat-func-bar.shortcuts>.func-bar {
+    align-items: center;
+}
+
+// 搜索条收缩
+.draggable-view__container.contact-top-bar {
+    padding-top: 15px;
+}
+
+.contact>.draggable-view__container.contact-top-bar.contact__top-area {
+    background: transparent !important;
+}
+
+.search-result.bg-color-counts-1.aggregate-search.empty {
+    transform: translateY(-15px);
+}
+
+// 右侧面板顶栏
+.draggable-view__container.panel-header,
+.draggable-view__container.contact-top-bar.contact__top-area,
+.sys-notify-card.group-notify-card>.list-item {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.empty-panel,.q-empty-page.empty-panel.empty-panel--noTitle {
+    // display: flex;
+    background: transparent;
+}
+
+.two-col-layout.contact-layout {
+    // box-shadow: 0 15px 0 0 black; 
+    // background-color: black; 
+    backdrop-filter: blur(15px) brightness(0.5);
+}
+
+.q-button.q-button--secondary.q-button--default.close,
+.favorites-layout>.q-divider.q-divider__vertical {
+    display: none;
+}
+
+// 好友列表右侧信息顶栏
+.draggable-view__container.contact-profile__head {
+    transform: translateY(3px) scaleY(1.15);
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.viewport-list.sys-notify-list>.viewport-list__inner {
+    background: transparent !important;
+}
+
+.main-info.text-ellipsis>.secondary-info.text-ellipsis {
+    color: white !important;
+}
+
+.list-item.across-mode.contact-item {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 15px;
+}
+*/
