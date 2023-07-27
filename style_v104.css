@@ -1,0 +1,507 @@
+/* 自己的聊天框 START */
+/* 文字 */
+.message-container--self .text-normal {
+    padding: 5px 12px 5px 12px;
+    font-size: 18px;
+    color: black;
+}
+
+/* 背景 */
+.message-container--self {
+    background-color: rgba(145, 223, 255, .03);
+    backdrop-filter: blur(5px);
+    filter: drop-shadow(3px 3px rgba(0, 0, 0, .5));
+}
+
+/* 自己的聊天框 END */
+
+/* 只是无聊整的东西
+    .message-container--self {
+        background: rgba(145, 223, 255, .3) !important;
+    }
+
+    .message-container {
+        transform: rotateY(180deg);
+        float: left;
+        animation: HighlightAnimation 5s infinite ease-in-out;
+    }
+
+    @keyframes HighlightAnimation {
+        0% {
+            background: rgba(145, 223, 255, .03) !important;
+            backdrop-filter: blur(50px) brightness(3);
+        }
+
+        50% {
+            background: rgba(145, 223, 255, .53) !important;
+            backdrop-filter: blur(15px) brightness(1);
+        }
+
+        100% {
+            background: rgba(145, 223, 255, .03) !important;
+            backdrop-filter: blur(50px) brightness(3);
+        }
+    }
+*/
+
+/* 不显示外边框线条 */
+.resize-handler>div[style="height: 2px;"] {
+    display: none !important;
+}
+
+/* 加宽主线条高度 */
+.resize-handler>div[style="height: 1px; background-color: transparent;"] {
+    height: 5px !important;
+    /* background: transparent !important; */
+    /* border: 0 transparent !important; */
+}
+
+/* 删除弱智的游戏中心图标 */
+.tab-item.nav-item {
+    display: none !important;
+}
+
+.q-select-button.card-action-btn {
+    background-color: rgba(0, 0, 0, .32);
+}
+
+.list-item.across-mode.contact-buddy-item.contact-item>.list-item__container {
+    background: transparent !important;
+}
+
+/* 
+.message-content__wrapper .container--others
+.contact-buddy-item.contact-item {
+    background: transparent !important;
+}
+*/
+
+/* 全局背景透明 */
+.list-item.contact-buddy-item.contact-item>.list-item__container,
+div.viewport-list__inner>div.list-item.across-mode.contact-buddy-item.contact-item>div.list-item__container>div.list-item__content>*,
+.list-item.across-mode.contact-device-item.contact-item,
+.list-item__container>.recent-contact-item--top,
+/* .empty-panel>.q-empty-page.empty-panel.empty-panel--noTitle, */
+.contact-buddy-item.contact-item,
+.message-container--self>.message-content.mix-message__inner,
+.draggable-view__container.panel-header.chat-header.need-token-updated,
+.chat-msg-area__tip--top>div>.av-call-status.horseman,
+/* 文件列表 */
+.message-container.file-message,
+.file-message--content,
+.normal-file.file-element,
+/* 聊天消息 */
+.message-content__wrapper>.msg-content-container.container--others.ark-msg-content-container,
+.msg-content-container.container--others.reply-message__container,
+.msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy,
+div.selector-layout__friends_list>div.viewport-list,
+.q-context-sub-menu__container>*,
+div.operation {
+    background: transparent !important;
+}
+
+/*
+.message-container--self>.message-content.mix-message__inner {
+    background: transparent !important;
+     padding: 5px 12px 5px 12px !important; 
+}
+*/
+
+/* 空页面 */
+.empty-profile {
+    /* background-color: #91dfff; */
+    backdrop-filter: blur(15px) !important;
+}
+
+/* 消息页面空背景 */
+.empty-panel.empty-aio>.ad-wrapper,
+.group-assistent-list {
+    background: rgba(0, 0, 0, .73) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* 空白好友面板背景 */
+.empty-panel>.ad-wrapper,
+.contact-profile {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 详细面板背景 */
+.contact-profile {
+    background: rgba(0, 0, 0, .62) !important;
+}
+
+/* 转发聊天记录大小 */
+.forward-msg {
+    width: 400px !important;
+    /* height: 175px !important; */
+}
+
+/* 编辑框回复内容拉宽至整个编辑框长度（右侧无法编辑） */
+.editor-el__reply.editor-el--block {
+    width: 100%;
+    /* height: 150px; */
+}
+
+/* 聊天框
+.chat-input-area {
+    background: transparent;
+}
+*/
+
+/* 去除消息底部内边距 */
+.message {
+    padding-bottom: 0 !important;
+}
+
+/* 边栏背景（与主题的背景透明度叠加）*/
+.draggable-view__container.sidebar {
+    background: rgba(0, 0, 0, .32) !important;
+    backdrop-filter: blur(1px);
+}
+
+/* 收藏页面 START */
+/* 意义不明，先注掉 
+.favorites-item-mainList>* {
+    border-bottom: 3px white !important;
+}*/
+
+/* 背景 */
+.favorites-layout__side,
+.favorites-layout__right-area>.favorites-layout__content {
+    background: rgba(0, 0, 0, .72225) !important;
+}
+
+/* 音频类收藏：消息条加长 */
+.favorites-item.favorites-audio>.audio-bubble.favorites-item__content.favorites-audio__content {
+    width: 125px;
+    height: 20px;
+}
+
+/* 来源展开更宽 */
+.favorites-item__addition>.favorites-item__author {
+    width: 350px !important;
+}
+
+/* 收藏页面 EMD */
+
+/* 群聊右框加宽 */
+.group-box,
+.group-box>.group-notice {
+    width: 260px !important;
+}
+
+/* 发送按钮 */
+.operation>.send-btn-wrap>.send.send--disabled,
+.operation>.send-btn-wrap>.send.sendable {
+    height: 30px;
+    width: 120px;
+}
+
+/* 输入框样式 START */
+
+/* 输入框，但目前意义不明，先注掉
+.ck.ck-editor__main {
+    height: 240px !important;
+}
+*/
+
+/* 上方输入框背景 */
+.q-scroll-view.scroll-view--show-scrollbar.msg-input,
+.chat-func-bar.shortcuts {
+    background: transparent !important;
+    backdrop-filter: blur(15px) !important;
+}
+
+/* 菜单样式 START（已使用插件代替）
+.q-menu.q-menu__mixed-type.undefined {
+    background: none;
+    border: 0 transparent;
+}
+
+div.q-context-menu,
+.chat-input-area.no-copy {
+    background: rgba(0, 0, 0, .01) !important;
+}
+
+.q-context-menu:hover {
+    background: rgba(0, 0, 0, .3) !important;
+    border: 0 transparent !important;
+    backdrop-filter: blur(5px) brightness(1.3);
+}
+*/
+
+/* 联系人样式 START */
+/* 签名及状态文字颜色 */
+.list-item__summary>.summary-main.text-ellipsis>span {
+    color: white !important;
+}
+
+/* （除好友通知外的）全局消息文字颜色 */
+.list-item.across-mode.recent-contact-item.recent-contact-item--top,
+.list-item__summary>.summary-main.text-ellipsis>.text-ellipsis {
+    color: #91dfff !important;
+}
+
+/* 意义不明 
+.draggable-view__container.panel-header.chat-header.need-token-updated {
+    background: transparent !important;
+}
+*/
+
+/* 貌似是置顶消息样式（但是没有反应） 
+.chat-msg-area__tip--top>div>.av-call-status.horseman {
+    background: transparent !important;
+    /// backdrop-filter: blur(10px) brightness(0.8);
+    border-bottom: 0;
+}
+*/
+
+/* 群聊人数 */
+.panel-header__title>.chat-header__title>#chatHeaderMembersCount {
+    font-size: 12px !important;
+    transform: translateY(2px);
+}
+
+/* 好友信息面板 */
+.profile__body {
+    /* background-color: rgba(0, 0, 0, .4); */
+    transform: translateY(27%);
+    /* bottom: 10px; */
+}
+
+/* 好友通知界面 */
+.list-item:not(.across-mode.recent-contact-item, .list-item__content, ) {
+    background-color: rgba(255, 255, 255, .75) !important;
+}
+
+/* 右侧面板（Bug：莫名其妙的会给左边面板上色） */
+.contact-layout__content-area {
+    backdrop-filter: blur(15px) brightness(0.2);
+}
+
+/* 好友列表跟随主题透明（TODO：目前离线的遮罩无法去除，如果能使用到一个更好的开发者工具应该就行了） */
+.contact>.draggable-view__container.contact-top-bar.contact__top-area,
+.contact>.contact-layout__content-area {
+    backdrop-filter: blur(0px);
+}
+
+.contact>.draggable-view__container.contact-top-bar.contact__top-area {
+    background: transparent !important;
+}
+
+.av-call-info>.name-text,
+.av-call-info>.content-text {
+    align-items: center !important;
+}
+
+/* 联系人样式 END */
+
+/* 聊天消息样式 */
+.message-content__wrapper>.msg-content-container.container--others.ark-msg-content-container,
+.msg-content-container.container--others.reply-message__container,
+.msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy {
+    background: transparent !important;
+    /* padding: 5px 12px 5px 12px; */
+}
+
+.message-content.mix-message__inner>.text-element {
+    padding: 0 !important;
+}
+
+/* 聊天文字样式 */
+.mix-message__inner>.text-element>.text-normal:not(.image.pic-element>.pic-content, .text-element--at),
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner {
+    padding: 5px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px !important;
+}
+
+/* 文件样式 START */
+/* 文件类消息大小（取决于文件名） */
+.message-container.file-message,
+.file-message--content,
+.normal-file.file-element {
+    width: 100% !important;
+    height: 100% !important;
+    /* margin-bottom: 20px !important; */
+}
+
+/* 将文件大小数值往右挪（考虑到后面要做东西于是不挪了）
+.normal-file.file-element>.file-info {
+    transform: translateX(20%) !important;
+} */
+
+/* 文件样式 End */
+
+/* 不知道是哪里的输入区域 */
+.chat-input-area.no-copy {
+    background-color: transparent !important;
+}
+
+/* （可用，但已停用）挪动聊天框上方按钮
+.chat-func-bar.shortcuts>.func-bar {
+    align-items: center;
+}
+*/
+
+/* 消息显示时间变色 */
+.babble {
+    color: white;
+}
+
+/* 搜索条收缩 */
+.draggable-view__container.contact-top-bar {
+    padding-top: 15px;
+}
+
+.search-result.bg-color-counts-1.aggregate-search.empty {
+    transform: translateY(-15px);
+}
+
+/* 右侧面板顶栏 */
+.draggable-view__container.panel-header,
+.draggable-view__container.contact-top-bar.contact__top-area,
+.sys-notify-card.group-notify-card>.list-item {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/* 表情面板 START */
+/* 背景 */
+.sticker-panel>* {
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(15px) !important;
+}
+
+/* 宽度 */
+.expression-panel-inner>.sticker-panel {
+    width: 375px !important;
+}
+
+/* 清除前后箭头外边距 */
+.tabs.sticker-panel__bar>.tabs-arrow {
+    margin: 0px !important;
+}
+
+/* 表情包按钮宽度同步（qq这个间距给我看迷了，这么宽一个位置放不进去是吧） */
+.sticker-panel__bar>.tabs-container>* {
+    margin-left: 9px;
+}
+
+/* 分割线 和 GIF图标（真的会有人用这东西吗） */
+.sticker-panel>.sticker-panel__divide,
+.tabs-container-item>.q-icon[data-v-5d0ef988] {
+    display: none;
+}
+
+/* 表情面板 END */
+
+.two-col-layout.contact-layout {
+    /* box-shadow: 0 15px 0 0 black; */
+    /* background-color: black; */
+    backdrop-filter: blur(15px) brightness(0.5);
+}
+
+.q-button.q-button--secondary.q-button--default.close,
+.favorites-layout>.q-divider.q-divider__vertical {
+    display: none;
+}
+
+.contact-layout__right-area {
+    backdrop-filter: brightness(0.5) !important;
+}
+
+/* 好友列表右侧信息顶栏
+.draggable-view__container.contact-profile__head {
+    transform: translateY(3px) scaleY(1.15);
+    background-color: rgba(0, 0, 0, .4);
+}
+*/
+
+.viewport-list.sys-notify-list>.viewport-list__inner {
+    background: transparent !important;
+}
+
+.main-info.text-ellipsis>.secondary-info.text-ellipsis {
+    color: white !important;
+}
+
+.card-summary.text-ellipsis:not(.card-summary__name),
+.summary-main.text-ellipsis>span {
+    color: black !important;
+}
+
+.list-item.across-mode.contact-item {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 15px;
+}
+
+/* 群聊成员名字改色使其容易可见 */
+.viewport-list__inner>.group-user>.group-user__content>.group-user__name.text-ellipsis {
+    color: rgba(255, 255, 255, .65) !important;
+}
+
+/* 成员列表收缩 */
+.group-user {
+    padding: 0 !important;
+}
+
+/* 头像圆角 */
+.avatar—wrapper>.avatar,
+.avatar-span>.avatar.message-container__avatar,
+.info-wrapper>.avatar—wrapper>.avatar,
+.list-item__container>.list-item__content>div.list-item__avatar>div,
+.avatar.group-user__avatar,
+/* 电话，共享环境 */
+div.recent-contact-item__phone>div.recent-contact-item__phone_bg {
+    border-radius: 5px !important;
+}
+
+/* TODO：离线模式头像的黑色遮罩 */
+/* div.avatar.avatar--offline {
+    border-radius: 50px !important;
+    background: #91dfff !important;
+} */
+
+/* 要高亮的按钮 */
+.chat-msg-area__tip--top {
+    animation: HighlightAnimation 5s infinite ease-in-out;
+}
+
+.q-notification.theme-default.chat-msg-area__tip--top-btn,
+.q-notification.theme-default.chat-msg-area__tip--bottom {
+    animation: HighlightAnimation 3s infinite ease-in-out;
+    width: 150px;
+}
+
+/* 高亮背景动画 */
+@keyframes HighlightAnimation {
+    from {
+        background-color: transparent;
+
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: #91dfff 1px 5px 25px;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+/* 
+.q-scroll-view.scroll-view--show-scrollbar.sys-notify__content {
+    width: 150%;
+    right: 25%;
+    align-items: center;
+}
+
+.viewport-list__inner,
+.viewport-list.sys-notify-list {
+    width: 1080px !important;
+}
+*/
