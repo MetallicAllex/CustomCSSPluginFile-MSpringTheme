@@ -6,7 +6,7 @@
 
 # 所需的东西
 由 [沫烬染](https://github.com/mo-jinran) 制作的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT)（基础）；<br />
-由 [MUKAPP](https://github.com/MUKAPP) 制作的 [MSpring-Theme](https://github.com/MUKAPP/LiteLoaderQQNT-MSpring-Theme) 主题（仅针对 Release 内的 1.0.3 版本）；<br />
+由 [MUKAPP](https://github.com/MUKAPP) 制作的 [MSpring-Theme](https://github.com/MUKAPP/LiteLoaderQQNT-MSpring-Theme) 主题（已增加 1.0.4 版样式完善）；<br />
 由 [xh321](https://github.com/xh321) 制作的 [自定义CSS](https://github.com/xh321/LiteLoaderQQNT-Custom-CSS) 主题（用于修改）。
 
 # 一些鬼话
