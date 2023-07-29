@@ -49,7 +49,8 @@
 .msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
 .msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy,
 .q-scroll-view.scroll-view--show-scrollbar.msg-input,
-.chat-func-bar.shortcuts {
+.chat-func-bar.shortcuts,
+div.operation {
     background: transparent !important;
 }
 
@@ -164,6 +165,49 @@ div.q-context-menu>.q-context-menu-item.q-context-menu-item--normal:hover {
 }
 /* 文件样式 End */
 
+/* 表情面板 START */
+/* 限制宽度 */
+.expression,.sticker-panel::before {
+    width: 424px !important;
+}
+
+/* 背景 */
+.sticker-panel>* {
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(15px) !important;
+}
+
+/* 修复画面溢出问题 */
+.sticker-container {
+    padding: 10px 5px 0 10px !important;
+    /* padding-top: 10px !important; */
+    width: 414px !important;
+}
+
+/* 清除前后箭头外边距 */
+.tabs.sticker-panel__bar>.tabs-arrow {
+    margin: 0px !important;
+}
+
+/* 暴力的将右侧按钮挪回显示区域内 */
+.tabs-arrow.tabs-arrow-next {
+    transform: translateX(-32px) translateY(1px);
+}
+
+/* 表情包按钮宽度同步（qq这个间距给我看迷了，这么宽一个位置放不进去是吧） */
+.sticker-panel__bar>.tabs-container>.tabs-container-item {
+    margin-right: 6px !important;
+    margin-left: 6.5px;
+}
+
+/* 分割线 和 GIF图标（真的会有人用这东西吗） */
+.sticker-panel>.sticker-panel__divide,
+.tabs-container-item>.q-icon[data-v-5d0ef988] {
+    display: none;
+}
+
+/* 表情面板 END */
+
 /* 好友面板 */
 .profile__body {
     /* background-color: rgba(0, 0, 0, .4); */
@@ -236,7 +280,85 @@ div.recent-contact-item__phone>div.recent-contact-item__phone_bg {
 */
 
 /* 目前未生效的样式
-.ck.ck-editor__main {
+.ck.ck-editor__main {/* 自己的聊天框 */
+.message-container--self .text-normal {
+    padding: 5px 12px 5px 12px;
+    font-size: 18px;
+    color: black;
+}
+
+/* 设置面板 */
+.setting-layout {
+    background: rgba(0, 0, 0, .75);
+}
+
+/* 好友通知界面 */
+/* .list-item:not(.across-mode.recent-contact-item, .list-item__content) {
+    background-color: rgba(255, 255, 255, .75) !important;
+} */
+
+.q-select-button.card-action-btn {
+    background-color: rgba(0, 0, 0, .32);
+}
+
+.list-item.across-mode.contact-buddy-item.contact-item>.list-item__container {
+    background: transparent !important;
+}
+
+
+.contact-buddy-item.contact-item {
+    background: transparent !important;
+}
+
+/* 全局背景透明 */
+.list-item.contact-buddy-item.contact-item>.list-item__container,
+/* 意义不明，先拎出来
+.viewport-list__inner>.list-item>div.list-item__container, */
+.list-item.across-mode.contact-device-item.contact-item,
+.list-item__container>.recent-contact-item--top,
+/* .empty-panel>.q-empty-page.empty-panel.empty-panel--noTitle, */
+.contact-buddy-item.contact-item,
+.message-container--self>.message-content.mix-message__inner,
+.draggable-view__container.panel-header.chat-header.need-token-updated,
+/* .chat-msg-area__tip--top>div>.av-call-status.horseman, */
+/* 文件样式 */
+.message-container.file-message,
+.file-message--content,
+.normal-file.file-element,
+/* 聊天消息样式 */
+.message-content__wrapper>.msg-content-container.container--others.ark-msg-content-container,
+.msg-content-container.container--others.reply-message__container,
+.msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
+.msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy,
+.q-scroll-view.scroll-view--show-scrollbar.msg-input,
+.chat-func-bar.shortcuts {
+    background: transparent !important;
+}
+
+.empty-profile {
+    background-color: #91dfff !;
+    backdrop-filter: blur(15px) !important;
+}
+
+.empty-panel.empty-aio>.ad-wrapper,
+.group-assistent-list {
+    background: rgba(0, 0, 0, .72) !important;
+    backdrop-filter: blur(5px);
+}
+
+.forward-msg {
+    width: 400px !important;
+    /* height: 175px !important; */
+}
+
+.message {
+    padding-bottom: 0 !important;
+}
+
+.draggable-view__container.sidebar {
+    background: rgba(0, 0, 0, .32) !important;
+    backdrop-filter: blur(1px);
+
     height: 240px !important;
 }
 
