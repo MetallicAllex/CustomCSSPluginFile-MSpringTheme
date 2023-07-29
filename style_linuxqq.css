@@ -5,6 +5,11 @@
     color: black;
 }
 
+/* 设置面板 */
+.setting-layout {
+    background: rgba(0, 0, 0, .75);
+}
+
 /* 好友通知界面 */
 /* .list-item:not(.across-mode.recent-contact-item, .list-item__content) {
     background-color: rgba(255, 255, 255, .75) !important;
@@ -15,6 +20,11 @@
 }
 
 .list-item.across-mode.contact-buddy-item.contact-item>.list-item__container {
+    background: transparent !important;
+}
+
+
+.contact-buddy-item.contact-item {
     background: transparent !important;
 }
 
@@ -39,14 +49,8 @@
 .msg-content-container.container--others.mix-message__container>.message-content.mix-message__inner>.text-element,
 .msg-content-container.container--others.reply-message__container>.message-content.reply-message__inner>.reply-element.no-copy,
 .q-scroll-view.scroll-view--show-scrollbar.msg-input,
-.chat-func-bar.shortcuts,
-div.operation,
-.aio>.panel-header.chat-header.need-token-updated {
+.chat-func-bar.shortcuts {
     background: transparent !important;
-}
-
-.q-button.q-button--secondary.q-button--default.close {
-    display: none;
 }
 
 .empty-profile {
@@ -67,11 +71,6 @@ div.operation,
 
 .message {
     padding-bottom: 0 !important;
-}
-
-div.container>aside.sidebar {
-    background: rgba(0, 0, 0, .71973) !important;
-    backdrop-filter: blur(5px);
 }
 
 .draggable-view__container.sidebar {
